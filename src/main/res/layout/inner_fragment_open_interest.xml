@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_like_text_height"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/button_like_text_width"
+            android:layout_height="match_parent"
+            android:background="@color/text_bg"
+            android:gravity="center"
+            android:text="@string/text_chart"
+            android:textColor="@color/white"
+            android:textSize="@dimen/Lfont" />
+
+        <TextView
+            android:id="@+id/text_interest_raterank"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:gravity="right|bottom"
+            android:paddingBottom="3dp"
+            android:text="@string/text_rate_rank"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/red_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_chart_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textSize="@dimen/Mfont" />
+
+        <TextView
+            android:id="@+id/text_chart_shzs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/Mfont" />
+
+        <TextView
+            android:id="@+id/text_chart_szzs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/Mfont" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_interest_chart"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"></LinearLayout>
+
+    <TextView
+        android:layout_width="@dimen/button_like_text_width"
+        android:layout_height="@dimen/button_like_text_height"
+        android:layout_marginTop="8dp"
+        android:background="@color/text_bg"
+        android:gravity="center"
+        android:text="@string/text_interest"
+        android:textColor="@color/white"
+        android:textSize="@dimen/Lfont" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/red_line" />
+
+    <TextView
+        android:id="@+id/text_interest_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mini_margin_left"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:src="@drawable/red_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zznorth.tianji.view.ZZScrollListView
+            android:id="@+id/listView_interest_state"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/news_list_divider_line"
+            android:dividerHeight="1dp"
+            android:listSelector="@android:color/transparent" />
+        <TextView
+            android:id="@+id/text_no_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_interest_data"
+            android:gravity="center"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</LinearLayout>

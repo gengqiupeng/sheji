@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:id="@+id/radioG_internal_top"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_internal_zzview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_internal_top_left"
+            android:text="@string/zz_viewer"
+            android:textColor="@drawable/tab_internal_font_selector"
+            android:gravity="center"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/radio_internal_theme"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_internal_top"
+            android:text="@string/zz_theme_weathervane"
+            android:textColor="@drawable/tab_internal_font_selector"
+            android:gravity="center"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/radio_internal_interpretation"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/tab_internal_top_right"
+            android:text="@string/zz_policy_interpretation"
+            android:textColor="@drawable/tab_internal_font_selector"
+            android:gravity="center"
+            android:button="@null" />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_internal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+</LinearLayout>

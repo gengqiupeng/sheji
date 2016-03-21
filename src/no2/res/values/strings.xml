@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">天玑贰号</string>
+    <string name="login_user_name">用户名：</string>
+    <string name="login_pwd">密\u0020\u0020\u0020\u0020码：</string>
+    <string name="login_remember_pwd">记住密码</string>
+    <string name="login_auto_login">自动登录</string>
+    <string name="login_login">登录</string>
+    <string name="legal_input">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_@.#</string>
+    <!--==================底部导航========================-->
+    <string name="today_operate">今日操作</string>
+    <string name="open_interest">持仓状况</string>
+    <string name="mining_themes">题材挖掘</string>
+    <string name="internal_reference">独家内参</string>
+    <string name="notification">通知公告</string>
+    <string name="notification_vertical">通\n知\n公\n告</string>
+    <string name="user_center">用户中心</string>
+    
+    <!--======================TextView====================-->
+    <string name="text_chart">收益对比图</string>
+    <string name="text_rate_rank">收益排行榜</string>
+    <string name="text_rate_rank_nolink">收益排行榜</string>
+    <string name="text_interest">持仓状况</string>
+    <string name="text_sold_history">成交历史</string>
+    <!--=======================ListViewHeader===================-->
+    <string name="list_text_stock_name">证券/代码</string>
+    <string name="list_text_time">日期/时间</string>
+    <string name="list_text_count_price">数量/市值</string>
+    <string name="list_text_current_cost">当前价/成本价</string>
+    <string name="list_text_profit_loss">浮动盈亏/盈亏比(%)</string>
+    <string name="list_text_price_amount">价格/数量</string>
+    <string name="list_text_sold">成交金额</string>
+    <string name="list_text_rank">排名</string>
+    <string name="list_text_stock_id">股票代码</string>
+    <string name="list_text_stock_sname">股票简称</string>
+    <string name="list_text_rate">收益率(%)</string>
+
+    <!--====================用户相关=======================-->
+    <string name="user_account">账\u0020\u0020户</string>
+    <string name="user_name">姓\u0020\u0020名</string>
+    <string name="user_out_date">过期时间</string>
+    <string name="user_logout">退出登录</string>
+    <string name="user_about_us">关于我们</string>
+    <string name="user_change_pwd">更改密码</string>
+    <string name="user_old_pwd_hint">请输入原始密码</string>
+    <string name="user_new_pwd_hint">请输入新密码</string>
+    <string name="user_confirm_pwd_hint">请确认您的新密码</string>
+    <string name="user_old_pwd">原密码：</string>
+    <string name="user_new_pwd">新密码：</string>
+    <string name="user_confirm_pwd">确认新密码：</string>
+    
+    <string name="tianji_notification">天玑提示</string>
+    <string name="click_and_info">点击图表中的点查看详情</string>
+    <string name="load">正在加载</string>
+    <string name="sold">卖</string>
+    <string name="buy">买</string>
+
+    <string name="about_us">天玑贰号投顾服务平台 V1.0.1\n北京中资北方投资顾问有限公司\n\n
+    权利声明：\n\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020天玑贰号投顾服务平台由北京中资北方投资顾问有限公司开发，受版权法保护，
+    对平台发布的所有信息保留权利，未经许可不得随意复制，传播。</string>
+    <string name="zz_viewer">中资观点</string>
+    <string name="zz_theme_weathervane">题材风向标</string>
+    <string name="zz_policy_interpretation">政策解读</string>
+    <string name="no_text">暂无数据</string>
+    <string name="no_interest_data">暂无持仓数据</string>
+    <string name="text_total_assets">总资产：%1$d \u0020</string>
+    <string name="text_total_info">总资产：%1$s\u0020可用资金：%2$s\u0020市值：%3$s\u0020</string>
+    <string name="text_shzs">上证指数：%1$s \u0020</string>
+    <string name="text_szzs">深证指数：%1$s \u0020</string>
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/loginPrimary">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/login_bg" />
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_input_size"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/login_input_margin"
+        android:layout_marginRight="@dimen/login_input_margin">
+
+        <TextView
+            android:id="@+id/text_login_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/login_user_name"
+            android:textSize="@dimen/Lfont" />
+
+        <ImageView
+            android:id="@+id/icon_login_user"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_toRightOf="@id/text_login_username"
+            android:background="@color/white"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/login_user_icon" />
+
+        <EditText
+            android:id="@+id/edit_login_username"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_input_heigh"
+            android:layout_toRightOf="@id/icon_login_user"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/text_login_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_login_username"
+            android:layout_marginTop="@dimen/login_pwd_margin_top"
+            android:text="@string/login_pwd"
+            android:textSize="@dimen/Lfont" />
+
+        <ImageView
+            android:id="@+id/icon_login_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_below="@id/text_login_username"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@id/text_login_pwd"
+            android:background="@color/white"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/login_pwd_icon" />
+
+        <EditText
+            android:id="@+id/edit_login_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_input_heigh"
+            android:layout_alignLeft="@id/edit_login_username"
+            android:layout_below="@id/text_login_username"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@id/text_login_pwd"
+            android:background="@color/white"
+            android:inputType="textWebPassword" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/checklayout"
+        android:layout_width="210dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/relative"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@+id/check_login_pwd"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:text="@string/login_remember_pwd"
+            android:textSize="@dimen/Mfont" />
+
+        <CheckBox
+            android:id="@+id/check_login_auto_login"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:text="@string/login_auto_login"
+            android:textSize="@dimen/Mfont" />
+
+        <Button
+            android:id="@+id/button_login_login"
+            android:layout_width="198dp"
+            android:layout_height="@dimen/login_button_height"
+            android:layout_below="@id/check_login_auto_login"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_login"
+            android:text="@string/login_login"
+            android:textColor="@color/white"
+            android:textSize="@dimen/Lfont" />
+    </RelativeLayout>
+
+    <!--上弹布局必须放在最下面-->
+    <com.zznorth.tianji.view.PullDoorView
+        android:id="@+id/view_login_pullDoor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-20dp">
+
+        <!--       <ImageView
+                   android:id="@+id/image_login_up"
+                   android:layout_width="42dp"
+                   android:layout_height="25dp"
+                   android:layout_alignParentBottom="true"
+                   android:layout_centerHorizontal="true"
+                   android:layout_marginBottom="10dp"
+                   android:src="@drawable/welcome_up" />-->
+    </com.zznorth.tianji.view.PullDoorView>
+
+</RelativeLayout>

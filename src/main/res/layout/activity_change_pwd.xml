@@ -1,0 +1,131 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/title_bar">
+
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/medium_margin_left"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/text_top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/medium_margin_left"
+            android:layout_toRightOf="@id/image_back"
+            android:gravity="center_vertical"
+            android:text="@string/user_change_pwd"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/baseBackground"
+        android:layout_marginTop="@dimen/title_bar_height">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginLeft="47dp"
+            android:layout_marginRight="47dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/user_center_banner" />
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="35dp">
+
+            <TextView
+                android:id="@+id/text_pwd_old"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/login_input_heigh"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="@string/user_old_pwd"
+                android:textColor="@color/title_bar"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edit_pwd_old"
+                android:layout_width="180dp"
+                android:layout_height="@dimen/login_input_heigh"
+                android:layout_alignBottom="@id/text_pwd_old"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/edit_text_shape"
+                android:textColor="@color/black"
+                android:inputType="textWebPassword" />
+
+            <TextView
+                android:id="@+id/text_pwd_new"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/login_input_heigh"
+                android:layout_below="@id/text_pwd_old"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="@string/user_new_pwd"
+                android:textColor="@color/title_bar"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edit_pwd_new"
+                android:layout_width="180dp"
+                android:layout_height="@dimen/login_input_heigh"
+                android:layout_alignBottom="@id/text_pwd_new"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/edit_text_shape"
+                android:textColor="@color/black"
+                android:inputType="textWebPassword" />
+
+            <TextView
+                android:id="@+id/text_pwd_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/login_input_heigh"
+                android:layout_below="@id/text_pwd_new"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="@string/user_confirm_pwd"
+                android:textColor="@color/title_bar"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/edit_pwd_confirm"
+                android:layout_width="180dp"
+                android:layout_height="@dimen/login_input_heigh"
+                android:layout_alignBottom="@id/text_pwd_confirm"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/edit_text_shape"
+                android:textColor="@color/black"
+                android:inputType="textWebPassword" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button_pwd_change"
+            android:layout_width="198dp"
+            android:layout_height="@dimen/login_button_height"
+            android:layout_below="@id/relative"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/button_change_pwd"
+            android:text="@string/user_change_pwd"
+            android:textColor="@color/white"
+            android:textSize="@dimen/Lfont" />
+    </RelativeLayout>
+</RelativeLayout>

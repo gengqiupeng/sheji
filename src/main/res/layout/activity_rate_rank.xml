@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/baseBackground"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/base_layout_padding"
+        android:paddingRight="@dimen/base_layout_padding">
+
+        <TextView
+            android:layout_width="@dimen/button_like_text_width"
+            android:layout_height="@dimen/button_like_text_height"
+            android:layout_marginTop="8dp"
+            android:background="@color/text_bg"
+            android:gravity="center"
+            android:text="@string/text_rate_rank_nolink"
+            android:textColor="@color/white"
+            android:textSize="@dimen/Lfont" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="@drawable/red_line" />
+
+        <include layout="@layout/listview_header_raterank" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:src="@drawable/red_line" />
+
+        <com.zznorth.tianji.view.SwipeRefreshLayout
+            android:id="@+id/refresh_layout_raterank"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/listView_rate_rank"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@drawable/red_line"
+                android:dividerHeight="0dp"
+                android:listSelector="@android:color/transparent"></ListView>
+        </com.zznorth.tianji.view.SwipeRefreshLayout>
+    </LinearLayout>
+</LinearLayout>

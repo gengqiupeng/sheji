@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp">
+
+    <com.zznorth.tianji.view.SwipeRefreshLayout
+        android:id="@+id/refresh_layout_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/psv_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/view_pager_banner" />
+
+                <com.zznorth.tianji.view.ZZScrollListView
+                    android:id="@+id/listView_today_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@drawable/red_line"
+                    android:dividerHeight="1dp"
+                    android:listSelector="@android:color/transparent" />
+            </LinearLayout>
+        </ScrollView>
+    </com.zznorth.tianji.view.SwipeRefreshLayout>
+
+</LinearLayout>

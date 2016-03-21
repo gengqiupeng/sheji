@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d36c0d</color>
+    <color name="colorPrimaryDark">#a84200</color>
+    <color name="colorAccent">#FFd23408</color>
+
+    <color name="loginPrimary">#d36a0e</color>
+    <color name="loginButton">#cc2a1e</color>
+    <color name="loginButtonDark">#941d15</color>
+    <color name="medium_white">#888888</color>
+
+    <color name="baseBackground">#ffffff</color>
+    <!--========状态栏颜色===========-->
+    <color name="statusBarColor">#d36c0d</color>
+
+    <color name="tab_bottom_dark">#d36c0d</color>
+    <color name="tab_bottom_light">#e8e8e8</color>
+
+    <color name="title_bar">#d36a0e</color>
+    <color name="text_bg">#d36c0d</color>
+
+    <!--===============新闻列表配色====================-->
+    <color name="news_list_pressed">#FFdfad91</color>
+    <color name="news_list_default">#FFFFFFFF</color>
+    <color name="news_list_bg">#FFA97F40</color>
+    <color name="news_list_font_pressed">#FFD23408</color>
+    <color name="news_list_item_point">#d03508</color>
+    <color name="notification_list">#FFFFFFFF</color>
+    <color name="news_list_divider_line">#f1dbc4</color>
+    <!--================ListView点击色=================-->
+    <color name="listview_default">#00FFFFFF</color>
+    <color name="listview_pressed">#3FFFFFFF</color>
+    <!--================用户中心配色===================-->
+    <color name="user_item_default">#3FFFFFFF</color>
+    <color name="user_item_pressed">#7FFFFFFF</color>
+    <!--===================基础色=======================-->
+    <color name="red">#FFFF0000</color>
+    <color name="blue">#FF0000FF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="translate">#00000000</color>
+</resources>

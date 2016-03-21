@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--无用，先留着-->
+    <ImageView
+        android:id="@+id/image_notification_icon"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        style="@style/TextTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_szzs"
+        android:layout_toRightOf="@id/image_notification_icon"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/text_notification_szzs"
+        style="@style/TextTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/text_szzs"
+        android:layout_marginTop="10dp"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/text_notification_szzs_price"
+        style="@style/TextTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/text_notification_szzs"
+        />
+
+    <TextView
+        android:id="@+id/text_notification_szzs_percent"
+        style="@style/TextTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/text_notification_szzs_price"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/text_shzs"
+        style="@style/TextTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_szzs"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@id/text_szzs" />
+
+    <TextView
+        android:id="@+id/text_notification_shzs"
+        style="@style/TextTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/text_shzs"
+        android:layout_below="@id/text_szzs"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/text_notification_shzs_price"
+        style="@style/TextTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/text_notification_shzs"
+        android:layout_below="@id/text_szzs"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@id/text_notification_szzs_price"
+         />
+
+    <TextView
+        android:id="@+id/text_notification_shzs_percent"
+        style="@style/TextTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/text_notification_shzs_price"
+        android:layout_alignLeft="@id/text_notification_szzs_percent"
+        android:layout_below="@id/text_szzs"
+        android:layout_marginTop="10dp"
+        android:gravity="center" />
+
+</RelativeLayout>

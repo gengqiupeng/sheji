@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup
+    android:id="@+id/radioG_tab"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/tab_bottom_height"
+    android:orientation="horizontal"
+    android:layout_alignParentBottom="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.zznorth.tianji.view.ZZRadioButton
+        android:id="@+id/radio_tab_today"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:background="@drawable/tab_today_selector"
+        android:gravity="center"
+        android:includeFontPadding="true"
+        android:textColor="@color/white" />
+
+    <!--<com.zznorth.tianji.view.ZZRadioButton
+        android:id="@+id/radio_tab_interest"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:background="@drawable/tab_open_interest_selector"
+        android:gravity="center"
+        android:includeFontPadding="true"
+        android:textColor="@color/white" />-->
+
+    <com.zznorth.tianji.view.ZZRadioButton
+        android:id="@+id/radio_tab_themes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:background="@drawable/tab_hot_point_selecotr"
+        android:gravity="center"
+        android:includeFontPadding="true"
+        android:textColor="@color/white" />
+
+    <com.zznorth.tianji.view.ZZRadioButton
+        android:id="@+id/radio_tab_notification"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:background="@drawable/tab_internal_selector"
+        android:gravity="center"
+        android:includeFontPadding="true"
+        android:textColor="@color/white" />
+
+    <com.zznorth.tianji.view.ZZRadioButton
+        android:id="@+id/radio_tab_user"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:button="@null"
+        android:background="@drawable/tab_notification_selector"
+        android:gravity="center"
+        android:includeFontPadding="true"
+        android:textColor="@color/white" />
+</RadioGroup>
